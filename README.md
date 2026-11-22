@@ -1,17 +1,10 @@
-Windows 11 - CMD SCRIPT FOR RESET WINDOWS DEFENDER v1
+# Windows Defender History Cleanup
 
-Delete history of detected: THREATS/QUARANTINED 
-Clear history of: "Controlled Access Folders" (CFA)
+`RESET_WIN_DEFENDER.cmd` is a Windows 11 CMD/PowerShell hybrid that elevates itself and removes Microsoft Defender Protection history data, including detection history, quarantine data, Controlled Folder Access history, and the matching scan database files. It can prompt to restart Windows afterward.
 
-To execute this CMD script:
+## Important warning
 
-   Just open RESET_WIN_DEFENDER.cmd file. 
-   (Confirm as trusted, safe to run if you are prompted)
+This permanently removes local Defender history and quarantine data. Do not use it to respond to an active threat or when you need to preserve evidence. Review and resolve detections in Windows Security first. Only run the script if you understand what will be removed and have a specific reason to clear this data.
 
-Jacek Żaczek
-08.05.2026
-
-
-
-
+To run, open `RESET_WIN_DEFENDER.cmd` and approve the Windows UAC prompt. The script pauses before continuing and asks whether to restart Windows after the cleanup.
 
